@@ -56,8 +56,8 @@ export default function Login() {
   return<>
   
   <div>
-    <div className="w-75 m-auto">
-      <h2>Login</h2>
+    <div className="w-75 my-5 m-auto">
+      
       <form onSubmit={formik.handleSubmit}>
       
         <label htmlFor="email">Email</label>
