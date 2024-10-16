@@ -23,15 +23,7 @@ import FullCat from './Components/FullCat/FullCat';
 
 let routes =createBrowserRouter([
 
-  {path:'/', element:<AuthLayout/> , children:[
-    {index:true , element: <Register/> },
-    {path: 'Login' , element: <Login/> },
-    {path:'Logout' , element:<Logout />},
-    
-    
-    
-     
-  ]},
+ 
   {path:'/', element:<MainLayout/> , children:[
     {index: true , element: <ProtectedRoutes><Home/></ProtectedRoutes>},
     {path: 'Home' , element: <ProtectedRoutes><Home/></ProtectedRoutes>},
@@ -47,7 +39,10 @@ let routes =createBrowserRouter([
     
      
   ]},
-  
+    {path:'/', element: <AuthLayout/> , children:[
+    {path: 'Register' , element: <Register/> },
+    {path: 'Login' , element: <Login/> },
+  ]},
 ])
 
 function App() {
