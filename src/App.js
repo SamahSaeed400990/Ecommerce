@@ -40,7 +40,7 @@ let routes =createBrowserRouter([
      
   ]},
     {path:'/', element: <AuthLayout/> , children:[
-    {path: 'Register' , element: <Register/> },
+    {index: true , element: <Register/> },
     {path: 'Login' , element: <Login/> },
   ]},
 ])
